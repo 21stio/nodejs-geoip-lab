@@ -1,0 +1,10 @@
+version: '2'
+services:
+  lab:
+    build: .
+    volumes:
+      - ./playground.js:/opt/lab/playground.js
+      - ./geoip_database.dat:/opt/lab/geoip_database.dat
+      - ./downloadGeoipDatabase.sh:/opt/lab/downloadGeoipDatabase.sh
+    environment:
+      - GEOIP_DATABASE=/opt/lab/geoip_database.dat

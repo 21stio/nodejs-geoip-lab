@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+.idea
+geoip_database.dat
+geoip_database.gz
